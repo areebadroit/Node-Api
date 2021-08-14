@@ -1,5 +1,6 @@
 export const getOne = model => async(req,res)=>{
-
+    console.log("Request Received");
+    res.status(200).end();
 }
 
 export const getMany = model => async(req,res)=>{
@@ -7,7 +8,8 @@ export const getMany = model => async(req,res)=>{
 }
 
 export const createOne = model => async(req,res)=>{
-    
+    console.log("Request Received");
+    res.status(200);
 }
 
 export const updateOne = model => async(req,res)=>{
