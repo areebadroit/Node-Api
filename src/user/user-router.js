@@ -4,7 +4,12 @@ const router = Router();
 
 router
     .route('/')
-    .get(controllers.getOne)
     .post(controllers.createOne);
+
+router
+    .route('/:id')
+    .get(controllers.getOne)
+    .patch(controllers.updateOne)
+    .delete(controllers.removeOne);
 
 export default router;
